@@ -86,6 +86,56 @@ body {
   background-color: #ddd;
   color: black;
 }
+
+/* DROPDOWN CONTENT STYLE */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: darkgrey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /* !!!!!!!!!!!!!!!!!!!! NAV BAR !!!!!!!!!!!! */
 </style>
 </head>
@@ -107,6 +157,15 @@ body {
     <div id="navbar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
+        <div class="dropdown">
+          <button class="dropbtn">NOTES 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fall18.html">FALL QUARTER 2018</a>
+          </div>
+        </div> 
+        <a href="gallery.html">GALLERY</a>
         <a href="contact.html">CONTACT</a>
       </div>
 
@@ -123,7 +182,10 @@ body {
       }
     }
     </script>
+
     <!-- !!!!!!!!!!!!!!!!!!!! NAV BAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+    
 
 
 
