@@ -133,6 +133,20 @@
         font-size: 40px;
         padding: none;
     }
+    /* *************** NOTES IMAGES SIDE BY SIDE ********************* */
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
     </style>
 </head>
 
@@ -182,15 +196,35 @@
 <div id="PHYSICS 1C" class="tabcontent">
   <h1>PHYSICS 1C</h1>
   <h2>Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity</h2>
-  <h3>WEEK 1</h3>
+  <!-- <h3>WEEK 1</h3>
   <img src="pic_trulli.jpg" alt="Italian Trulli">
-  <p>*enter week content here*</p>
+  <p>*enter week content here*</p> -->
   <h3>WEEK 2</h3>
-  <img src="pic_trulli.jpg" alt="Italian Trulli">
-  <p>*enter week content here*</p>
+  <div class = "row">
+        <div class = "column">
+            <img src="uclaphysics1c_w21.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+        <div class = "column">
+            <img src="uclaphysics1c_w22.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+        <div class = "column">
+            <img src="uclaphysics1c_w23.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+        <div class = "column">
+            <img src="uclaphysics1c_w24.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+    </div>
+  <!-- <p>*enter week content here*</p> -->
   <h3>WEEK 3</h3>
-  <img src="pic_trulli.jpg" alt="Italian Trulli">
-  <p>*enter week content here*</p>
+    <div class = "row">
+        <div class = "column">
+            <img src="uclaphysics1c_w32.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+        <div class = "column">
+            <img src="uclaphysics1c_w31.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+        </div>
+    </div>
+  <!-- <p>*enter week content here*</p> -->
   <h3>WEEK 4</h3>
   <img src="pic_trulli.jpg" alt="Italian Trulli">
   <p>*enter week content here*</p>
@@ -293,9 +327,9 @@
 <div id="EPS SCI 3" class="tabcontent">
   <h1>EARTH, PLANETARY, AND SPACE SCIENCES 3</h1>
   <h2>Astrobiology</h2>
-  <h3>WEEK 1</h3>
+  <!-- <h3>WEEK 1</h3>
   <img src="pic_trulli.jpg" alt="Italian Trulli">
-  <p>*enter week content here*</p>
+  <p>*enter week content here*</p> -->
   <h3>WEEK 2</h3>
   <img src="pic_trulli.jpg" alt="Italian Trulli">
   <p>*enter week content here*</p>
