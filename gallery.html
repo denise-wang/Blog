@@ -26,7 +26,7 @@
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;    
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -81,6 +81,18 @@
     padding: 2px 16px;
 }
 /* *************** GALLERY CONTENT ********************** */
+.column {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 </style>
 </head>
 
@@ -99,13 +111,13 @@
   <a href="index.html">HOME</a>
   <a href="about.html">ABOUT</a>
     <div class="dropdown">
-      <button class="dropbtn">NOTES 
+      <button class="dropbtn">NOTES
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="fall18.html">FALL QUARTER 2018</a>
       </div>
-    </div> 
+    </div>
     <a href="gallery.html">GALLERY</a>
     <a href="blog.html">BLOG</a>
     <a href="countdown.html">COUNTDOWN</a>
@@ -114,15 +126,28 @@
 <!-- *************** NAVIGATION BAR ********************** -->
 
 <!-- *************** GALLERY CONTENT ********************** -->
-<h2>Card</h2>
+<!-- <h2 style="font-family:verdana;" >GALLERY</h2>
 
 <div class="card">
   <img src="uclavolunteer.jpg" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>John Doe</b></h4> 
-    <p>Architect & Engineer</p> 
+    <h4 style="font-family:verdana; text-align:center;"><b>UCLA Volunteer Day</b></h4>
+    <p style="font-family:verdana; text-align:center;">Horace Mann UCLA Community School - September 29, 2018</p>
   </div>
 </div>
+
+<div class = "row">
+    <div class = "column">
+        <div class="card">
+            <img src="uclavolunteer.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+            <h4 style="font-family:verdana; text-align:center;"><b>UCLA Volunteer Day</b></h4>
+            <p style="font-family:verdana; text-align:center;">Horace Mann UCLA Community School - September 29, 2018</p>
+        </div>
+    </div>
+</div>
+ -->
+
 <!-- *************** GALLERY CONTENT ********************** -->
 
 </body>
