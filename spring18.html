@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    /* *************** NAVIGATION BAR ********************** */
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: lightblue;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* *************** NAVIGATION BAR ********************** */
+    /* *************** PAGE CONTENT ********************** */
+        * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;
+    background-color: rgb(139, 153, 167);
+    }
+
+    /* Style the tab */
+    .tab {
+        float: left;
+        border: 1px solid rgb(70, 140, 197);
+        background-color: white;
+        width: 20%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        background-color: #ccc;
+        opacity: 0.7;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        float: left;
+        padding: 12px 30px;
+        border: 1px solid rgb(70, 140, 197);
+        width: 80%;
+        background-color: white;
+        height: max-content;
+        margin-top: 50px;
+    }
+    /* *************** PAGE CONTENT ********************** */
+    .spring18content{
+        text-align: center;
+    }
+    .responsive {
+    width: 70%;
+    height: auto;
+    }
+    h2{
+        font-size: 23px;
+    }
+    h4{
+        font-size: 40px;
+        padding: none;
+    }
+    /* *************** NOTES IMAGES SIDE BY SIDE ********************* */
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    img.resize{
+      max-width: 1000%;
+      maxheight: 1000%;
+    }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+<!-- *************** NAVIGATION BAR ********************** -->
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <!-- DROPDOWN CONTENT -->
+    <div class="dropdown">
+      <button class="dropbtn">NOTES
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="fall17.html">FALL QUARTER 2017</a>
+        <a href="winter18.html">WINTER QUARTER 2018</a>
+        <a href="spring18.html">SPRING QUARTER 2018</a>
+        <a href="fall18.html">FALL QUARTER 2018</a>
+        <a href="winter19.html">WINTER QUARTER 2019</a>
+        <a href="spring19.html">SPRING QUARTER 2019</a>
+        <a href="fall19.html">FALL QUARTER 2019</a>
+      </div>
+    </div>
+    <a href="gallery.html">GALLERY</a>
+    <a href="blog.html">BLOG</a>
+    <a href="countdown.html">COUNTDOWN</a>
+    <a href="contact.html">CONTACT</a>
+  <!-- END DROPDOWN CONTENT -->
+</div>
+<!-- *************** NAVIGATION BAR ********************** -->
+<!-- *************** PAGE CONTENT ********************** -->
+<div class="spring18content">
+    <h4>SPRING QUARTER 2018</h4>
+    <p>*enter content here*</p>
+    <!-- <img src="uclaschedule.jpg" alt="image description" align="middle" width="1000" height="500"> -->
+    <img class="resize" src="spring18schedule.jpg" alt="Sping Quarter 2018 Schedule" class="responsive" width="300" height="275">
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'MATH 32A')" id="defaultOpen">MATH 32A</button>
+  <button class="tablinks" onclick="openCity(event, 'COM SCI 32')">COM SCI 32</button>
+  <button class="tablinks" onclick="openCity(event, 'PHYSICS 4AL')">PHYSICS 4AL</button>
+  <button class="tablinks" onclick="openCity(event, 'PHYSICS 1B')">PHYSICS 1B</button>
+</div>
+
+<!-- *************** PHYSICS CONTENT ********************** -->
+<div id="MATH 32A" class="tabcontent">
+  <h1>MATHEMATICS 32A</h1>
+  <h2>Calculus of Several Variables</h2>
+  <!-- <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p> -->
+
+  <!-- <p>*enter week content here*</p> -->
+  <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 2</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 3</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 4</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 5</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 6</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 7</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 8</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 9</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 10</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*.</p>
+</div>
+<!-- *************** PHYSICS CONTENT ********************** -->
+
+<!-- *************** MATH CONTENT ********************** -->
+<div id="COM SCI 32" class="tabcontent">
+<h1>COMPUTER SCIENCE 32</h1>
+  <h2>Introduction to Computer Science II</h2>
+  <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 2</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 3</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 4</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 5</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 6</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 7</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 8</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 9</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 10</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*.</p>
+</div>
+<!-- *************** MATH CONTENT ********************** -->
+
+<!-- *************** CS CONTENT ********************** -->
+<div id="PHYSICS 4AL" class="tabcontent">
+<h1>PHYSICS 4AL</h1>
+  <h2>Physics Laboratory for Scientists and Engineers: Mechanics</h2>
+  <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 2</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 3</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 4</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 5</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 6</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 7</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 8</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 9</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 10</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*.</p>
+</div>
+<!-- *************** CS CONTENT ********************** -->
+
+<!-- *************** EPS SCI CONTENT ********************** -->
+<div id="PHYSICS 1B" class="tabcontent">
+  <h1>PHYSICS 1B</h1>
+  <h2>Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields</h2>
+  <!-- <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p> -->
+  <h3>WEEK 1</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 2</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 3</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 4</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 5</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 6</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 7</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 8</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 9</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*</p>
+  <h3>WEEK 10</h3>
+  <img src="image_name.jpg" alt="image description">
+  <p>*enter week content here*.</p>
+</div>
+<!-- *************** EPS SCI CONTENT ********************** -->
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!-- *************** PAGE CONTENT ********************** -->
+
+
+
+</body>
+</html>
