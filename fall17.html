@@ -10,7 +10,6 @@
         background-color: #333;
         font-family: Arial, Helvetica, sans-serif;
     }
-
     .navbar a {
         float: left;
         font-size: 16px;
@@ -19,12 +18,10 @@
         padding: 14px 16px;
         text-decoration: none;
     }
-
     .dropdown {
         float: left;
         overflow: hidden;
     }
-
     .dropdown .dropbtn {
         font-size: 16px;
         border: none;
@@ -35,11 +32,9 @@
         font-family: inherit;
         margin: 0;
     }
-
     .navbar a:hover, .dropdown:hover .dropbtn {
         background-color: lightblue;
     }
-
     .dropdown-content {
         display: none;
         position: absolute;
@@ -48,7 +43,6 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
-
     .dropdown-content a {
         float: none;
         color: black;
@@ -57,11 +51,9 @@
         display: block;
         text-align: left;
     }
-
     .dropdown-content a:hover {
         background-color: #ddd;
     }
-
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -71,7 +63,6 @@
     body {font-family: "Lato", sans-serif;
     background-color: rgb(139, 153, 167);
     }
-
     /* Style the tab */
     .tab {
         float: left;
@@ -80,8 +71,12 @@
         width: 20%;
         height: 100%;
         margin-top: 50px;
+        /*position: fixed;
+        top: 70%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);*/
     }
-
     /* Style the buttons inside the tab */
     .tab button {
         display: block;
@@ -96,18 +91,15 @@
         transition: 0.3s;
         font-size: 17px;
     }
-
     /* Change background color of buttons on hover */
     .tab button:hover {
         background-color: #ddd;
     }
-
     /* Create an active/current "tab button" class */
     .tab button.active {
         background-color: #ccc;
         opacity: 0.7;
     }
-
     /* Style the tab content */
     .tabcontent {
         float: left;
@@ -140,12 +132,16 @@
     width: 50%;
     padding: 10px;
     }
-
     /* Clear floats after image containers */
     .row::after {
     content: "";
     clear: both;
     display: table;
+    }
+
+    img.resize{
+      max-width: 100%;
+      maxheight: 100%;
     }
 
     </style>
@@ -189,7 +185,7 @@
     <h4>FALL QUARTER 2017</h4>
     <p>*enter content here*</p>
     <!-- <img src="uclaschedule.jpg" alt="image description" align="middle" width="1000" height="500"> -->
-    <img src="fall17schedule.jpg" alt="Fall Quarter 2017 Schedule" class="responsive" width="1000" height="500">
+    <img class="resize" src="fall17schedule.jpg" alt="Fall Quarter 2017 Schedule" class="responsive" width="610" height="300">
 </div>
 
 <div class="tab">
@@ -247,7 +243,7 @@
   <h2>Variable Topics in Computer Science: Principles and Practices of Computing</h2>
   <h3>HOMEWORK 1</h3>
   <!-- <img src="image_name.jpg" alt="image description"> -->
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 1 (Part 1)
     Picobot 1- Traverse Through Entire Grid
     http://web.cs.ucla.edu/~todd/picobot.html
@@ -262,7 +258,7 @@
     2 x*** -> N 2
     2 N**x -> S 1
   </textarea>
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 1 (Part 2)
     Picobot 2- Traverse Through Entire Mazes
     http://web.cs.ucla.edu/~todd/picobot.html
@@ -288,7 +284,7 @@
   <img src="cs97hw2_1.jpg" alt="CS 97 Homework 2 (1/3)" width="300" height="400">
   <img src="cs97hw2_2.jpg" alt="CS 97 Homework 2 (2/3)" width="300" height="400">
   <img src="cs97hw2_3.jpg" alt="CS 97 Homework 2 (3/3)" width="320" height="400">
-<textarea rows="4" cols="60" readonly>
+<textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
   HOMEWORK 2 (Part 1)
   # Denise Wang
   # CS 97 Lecture 1
@@ -385,7 +381,7 @@
   # Out[17]: [1, 2, 3, 4, 5, 6, 7, 8]
 
 </textarea>
-<textarea rows="4" cols="60" readonly>
+<textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
   HOMEWORK 2 (Part 1)
   # Denise Wang
   # CS 97 Lecture 1
@@ -433,7 +429,7 @@
   <img src="cs97hw3_1.jpg" alt="CS 97 Homework 3 (1/3)" width="300" height="300">
   <img src="cs97hw3_2.jpg" alt="CS 97 Homework 3 (2/3)" width="300" height="300">
   <img src="cs97hw3_3.jpg" alt="CS 97 Homework 3 (3/3)" width="300" height="300">
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 3 (Part 1)
     #DENISE WANG
     #CS 97 Lecture 1
@@ -501,7 +497,7 @@
             finalList = merge(newList1, newList2)
             return finalList
   </textarea>
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 3 (Part 2)
     #DENISE WANG
     #CS 97 Lecture 1
@@ -530,7 +526,7 @@
   <h3>HOMEWORK 4</h3>
   <img src="cs97hw4_1.jpg" alt="CS 97 Homework 4 (1/2)" width="300" height="400">
   <img src="cs97hw4_2.jpg" alt="CS 97 Homework 4 (2/2)" width="300" height="400">
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 4
     # DENISE WANG
     # CS 97 Lecture 1
@@ -632,7 +628,7 @@
   <h3>HOMEWORK 5</h3>
   <img src="cs97hw5_1.jpg" alt="CS 97 Homework 5 (1/2)" width="300" height="400">
   <img src="cs97hw5_2.jpg" alt="CS 97 Homework 5 (2/2)" width="300" height="400">
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 5
     # DENISE WANG
     # CS 97 Lecture 1
@@ -724,7 +720,7 @@
   <img src="cs97hw6_1.jpg" alt="CS 97 Homework 6 (1/3)" width="300" height="400">
   <img src="cs97hw6_2.jpg" alt="CS 97 Homework 6 (2/3)" width="300" height="400">
   <img src="cs97hw6_3.jpg" alt="CS 97 Homework 6 (3/3)" width="330" height="400">
-  <textarea rows="4" cols="60" readonly>
+  <textarea rows="4" cols="55" style="font-size: 10pt; font-family: Courier New, Courier, monospace" readonly>
     HOMEWORK 6
     # DENISE WANG
     # CS 97 Lecture 1
@@ -872,18 +868,46 @@
   <p>*enter week content here*</p>
   <h3>WEEK 10</h3>
   <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*.</p>
-</div> -->
+  <p>*enter week content here*.</p>  -->
+</div>
 <!-- *************** MATH CONTENT ********************** -->
 
 <!-- *************** CS CONTENT ********************** -->
 <div id="COM SCI 1" class="tabcontent">
 <h1>COMPUTER SCIENCE 1</h1>
   <h2>Freshman Computer Science Seminar</h2>
-  <h3>WEEK 1</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 2</h3>
+  <h3>FINAL ESSAY</h3>
+  <textarea rows="10" cols="90" style="font-size: 13pt; line-height: 30px" readonly>
+Denise Wang
+Computer Science 1
+December 8, 2017
+                                                    Computer Science 1 Seminar Reflection
+CS1 Interesting Lectures:
+    Throughout the course of CS1, there have been multiple interesting topics introduced and discussed in lectures each week. From user stance prediction (network mining) and computational biology to computer architecture and the origins of the internet, students were open to a wide range of different aspects of computer science. Of all the subjects introduced, the two most interesting lectures were natural language processing and artificial intelligence.
+    Natural language processing is the interactions between computers and the human language, or more specifically, teaching computers to understand human languages. It is the field of computer science that deals with artificial intelligence and computational linguistics. [3] Because it is able to draw insights from data, it is heavily used throughout our everyday lives. Some examples of how natural language processing is used is through question answering, speech recognition, machine translation, and summarizing texts. It works by breaking down the data or sentences into parts of speech, followed by an extraction of syntactic matching and meaning of words and sentences. [1] Though these features of natural language processing are efficient and improving each day, they still remain challenges for engineers. Example of these challenges include ambiguity, biased word embeddings and prediction models, and the changes and growth of languages. This topic is interesting because it covers important and general ideas about computer science and how exactly it works. It introduces many aspects of computer science that many people, myself included, are curious about. When it comes to computer and human interaction, many people ponder about how it is possible for a machine to obtain and produce the knowledge that humans can. How do machines and certain features, such as Siri, understand what the users are saying? And through natural language processing, these questions can be answered. Furthermore, the challenges brought on by natural language processing are also interesting. For example, learning about ambiguity was intriguing because computers are unable to distinguish between words that have two different meanings.
+    Another interesting topic was artificial intelligence. Artificial intelligence is the development of computer systems that are capable of performing tasks that usually require human intelligence. It is the field of computer science that deals with linguistics, statistics, and mathematical logic. It is concerned with understanding and building intelligent machines that can perceive, understand, predict, manipulate, and learn. [4] Like natural language processing, artificial language is an important aspect of computer science that is apparent in our everyday lives. Some examples of artificial intelligence includes Siri, Tesla’s self-driving cars, advertisements, Netflix, and Spotify. [2] The architecture of artificial intelligence is broken down by the embedding environment, which passes on to perception, which includes written language, speech, vision, touch, mouse click, etc. This is then interpreted into learning, knowledge, and reasoning, which cycles through each other, and finally produces the action of written language, speech, movement, information display, etc. [4] Through the lecture, it was intriguing to learn how machines and robots can contain such high levels of intelligence. Artificial intelligence is an interesting topic to learn about because it raises many questions about the future as technology continues to increase. The examples of artificial intelligence discussed in the lecture such as Tesla and robotics raises questions and debates on whether artificial intelligence is beneficial for society or not. Though it seems like it is because of all of the handy devices and functions it performs, there may be a possibility that artificial intelligence becomes more intelligent than human intelligence, or that robots can be smarter than humans.
+    Thus, the two most interesting lectures were natural language processing and artificial intelligence because they are both important aspects of computer science and they raise many different questions and thoughts of how efficient and beneficial machines can be.
+
+CS1 Influence:
+    My interests in computer science/computer science and engineering has been affected by CS1 because it broadened my views on the field. By taking the seminar, I was able to learn about the nontechnical aspects of computer science rather than learning how to code and program. Because of this, I learned about real life applications of the field. The speakers who came and gave the lectures provided insights on their own experiences and careers, which allowed me to envision engineers in the working field and discover what I was interested and not interested in pursuing. From the seminar, I realized how important computer science is. It does not only involve the hardware and software of computers, but also many other aspects in our daily life. For instance, the lectures that introduced computational biology and the future of robotic space exploration exemplified the importance of computer science and engineering and how it is integrated among many other important areas of different fields. Thus, the effects of the seminar was very thought provoking and ensured my choice of pursuing a career in the computer science and engineering field.
+
+Future Predictions:
+    I think a possible CS related application with high impact to technology, society, and social life in the year 2027 is the replacement of cell phones with implanted chips that hold the same functionalities of these devices. Chips can be wirelessly connected to a bluetooth earpiece (most likely similar sized to the current Apple Earpods) or eyewear programmed to make/take calls, recite directions, broadcast navigation directions. An app that will be easily accessed on a desktop or broadcasted on the eyewear can be the foundation of these devices. All these can be programmed and be utilized in the workplace or at home. The creators and developers of the app will have researched the most popular functions and necessities that people need and have the app easily accessed to perform those functionalities. However, users will be able to demand or customize something that they need for private uses. For instance, senior citizens will be able to customize the ear piece to adjust to a certain volume or speed and have the eyewear adjusted to a certain degree. With the popularity of using an ID to swipe into a room, the chip (most likely extremely small) can be programmed to do the same as well. Cars, homes, work places or any personal/private rooms can be programmed to grant individuals access in different settings. With the earpiece and eyepiece, an individual can still do the same activities they wanted to on their devices. These devices will introduce a refined system of gestures and voice recognition, which is already being improved as we see the development of Siri over the years and the introduction of user gestures in Android and iOS devices. I think this chip+earpiece+glasses transformation will happen because overtime, people will want hands free devices to do everyday activities. The chip+earpiece+glasses is easily programmable to sync to computers or any monitor for people that still want the physical device. In addition, this possibly revolutionary device can offer limitless options for people in general. The idea may sound expensive, but I think humans will read a point where this transition will occur and thus, mass production of these devices will become inexpensive. The impact of the chip+earpiece+glasses will increase productivity and efficiency while eliminating distractions that come with holding a device which is what people are striving for in modern society.
+
+  References
+  
+  Lagi M. 2017. Natural Language Processing – Business Applications. (September 2017). Retrieved November 30, 2017 from https://www.techemergence.com/natural-language-processing-business-applications/
+
+  Adams R.L. 2017. 10 Powerful Examples Of Artificial Intelligence In Use Today. (November 2017). Retrieved December 30, 2017 from https://www.forbes.com/sites/robertadams/2017/01/10/10-powerful-examples-of-artificial-intelligence-in-use-today/#7364ed9f6a39
+
+  Chang K.W. 2017. Teaching Computers to Understand Human Languages (Natural Language Processing). (October 2017). Retrieved November 30, 2017
+
+  Darwiche, A. 2017. Artificial Intelligence (AI). (November 2017). Retrieved November 30, 2017
+
+  </textarea>
+  <!-- <img src="image_name.jpg" alt="image description"> -->
+  <p>Score: 100/100</p>
+  <!-- <h3>WEEK 2</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*</p>
   <h3>WEEK 3</h3>
@@ -909,7 +933,7 @@
   <p>*enter week content here*</p>
   <h3>WEEK 10</h3>
   <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*.</p>
+  <p>*enter week content here*.</p> -->
 </div>
 <!-- *************** CS CONTENT ********************** -->
 
@@ -966,7 +990,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
