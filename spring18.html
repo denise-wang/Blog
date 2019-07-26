@@ -61,7 +61,7 @@
     /* *************** PAGE CONTENT ********************** */
         * {box-sizing: border-box}
     body {font-family: "Lato", sans-serif;
-    background-color: rgb(139, 153, 167);
+    background-color: SlateGray;
     }
     /* Style the tab */
     .tab {
@@ -118,7 +118,9 @@
     }
     h4{
         font-size: 40px;
-        padding: none;
+        padding: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     /* *************** NOTES IMAGES SIDE BY SIDE ********************* */
     /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -140,6 +142,10 @@
 
     .container{
       padding: 30px
+    }
+
+    p {
+     padding: 0px;
     }
     </style>
 </head>
@@ -180,16 +186,22 @@
 <!-- *************** PAGE CONTENT ********************** -->
 <div class="spring18content">
     <h4>SPRING QUARTER 2018</h4>
-    <p>*enter content here*</p>
+    <!-- <p style="color:DarkGray;">Math 32A <span style="color:Silver"> Calculus of Several Variables </span> <span style="color:LightGray"> Ou, W. </span></p> -->
+    <p style="color:White;">Courses: </p>
+    <p style="color:Linen;">Math 32A- Calculus of Several Variables (Ou, W.) </p>
+    <p style="color:Silver;">Computer Science 32- Introduction to Computer Science II (Smallberg, D.) </p>
+    <p style="color:LightGrey;">Physics 4AL- Physics Laboratory for Scientists and Engineers: Mechanics (Hamilton, P.) </p>
+    <p style="color:Gainsboro;">Physics 1B- Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields (Coroniti, F.) </p>
     <!-- <img src="uclaschedule.jpg" alt="image description" align="middle" width="1000" height="500"> -->
     <img class="resize" src="spring18schedule.jpg" alt="Sping Quarter 2018 Schedule" class="responsive" width="300" height="275">
+    <p style="color:White;">Continue below for course material: </p>
 </div>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'MATH 32A')" id="defaultOpen">MATH 32A</button>
   <button class="tablinks" onclick="openCity(event, 'COM SCI 32')">COM SCI 32</button>
   <button class="tablinks" onclick="openCity(event, 'PHYSICS 4AL')">PHYSICS 4AL</button>
-  <button class="tablinks" onclick="openCity(event, 'PHYSICS 1B')">PHYSICS 1B</button>
+  <!-- <button class="tablinks" onclick="openCity(event, 'PHYSICS 1B')" >PHYSICS 1B</button> -->
 </div>
 
 <!-- *************** PHYSICS CONTENT ********************** -->
@@ -324,12 +336,9 @@
 <!-- *************** CS CONTENT ********************** -->
 
 <!-- *************** EPS SCI CONTENT ********************** -->
-<div id="PHYSICS 4AL" class="tabcontent">
+<!-- <div id="PHYSICS 1B" class="tabcontent">
   <h1>PHYSICS 1B</h1>
   <h2>Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields</h2>
-  <!-- <h3>WEEK 1</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p> -->
   <h3>WEEK 1</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*</p>
@@ -360,7 +369,7 @@
   <h3>WEEK 10</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*.</p>
-</div>
+</div> -->
 <!-- *************** EPS SCI CONTENT ********************** -->
 <script>
 function openCity(evt, cityName) {
