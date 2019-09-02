@@ -52,7 +52,7 @@ function snow() {
         ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
         flake.y += flake.velY;
         flake.x += flake.velX;
-            
+
         if (flake.y >= canvas.height || flake.y <= 0) {
             reset(flake);
         }
@@ -112,3 +112,5 @@ window.addEventListener("resize",function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 })
+
+confetti.start(1200)
