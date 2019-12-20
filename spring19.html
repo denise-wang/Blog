@@ -69,7 +69,7 @@
     /* *************** PAGE CONTENT ********************** */
         * {box-sizing: border-box}
     body {font-family: "Lato", sans-serif;
-    background-color: rgb(139, 153, 167);
+    background-color: SlateGray;
     }
 
     /* Style the tab */
@@ -132,6 +132,8 @@
     h4{
         font-size: 40px;
         padding: none;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     /* *************** NOTES IMAGES SIDE BY SIDE ********************* */
     /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -151,6 +153,14 @@
     img.resize{
       max-width: 100%;
       maxheight: 100%;
+    }
+
+    .container{
+      padding: 30px
+    }
+
+    p {
+     padding: 0px;
     }
     </style>
 </head>
@@ -191,19 +201,23 @@
 <!-- *************** PAGE CONTENT ********************** -->
 <div class="spring19content">
     <h4>SPRING QUARTER 2019</h4>
-    <p>*enter content here*</p>
-    <!-- <img src="uclaschedule.jpg" alt="image description" align="middle" width="1000" height="500"> -->
-    <img class="resize" src="spring19schedule.jpg" alt="Sping Quarter 2019 Schedule" class="responsive" width="550" height="320">
+    <p style="color:White;">Courses: </p>
+    <p style="color:Silver;">Computer Science M152A- Introductory Digital Design Laboratory (Potkonjak, M.) </p>
+    <p style="color:Silver;">Math 61- Introduction to Discrete Structures (Manolescu, C.) </p>
+    <p style="color:LightGrey;">Electrical and Computer Engineering 3 - Introduction to Electrical Engineering (Briggs, D.) </p>
+    <p style="color:Gainsboro;">Electrical and Computer Engineering 102 - Systems and Signals (Lorenzelli, F.) </p>
+    <img class="resize" src="https://i.postimg.cc/pXxBfd5d/spring19schedule.png" alt="Sping Quarter 2019 Schedule" class="responsive" width="550" height="320">
+    <p style="color:White;">Continue below for course material: </p>
 </div>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'MATH 61')" id="defaultOpen">MATH 61</button>
-  <button class="tablinks" onclick="openCity(event, 'COM SCI M152A')">COM SCI M152A</button>
+  <button class="tablinks" onclick="openCity(event, 'COM SCI M152A')" id="defaultOpen">COM SCI M152A</button>
+  <button class="tablinks" onclick="openCity(event, 'MATH 61')">MATH 61</button>
   <button class="tablinks" onclick="openCity(event, 'EC ENGR 3')">EC ENGR 3</button>
-  <button class="tablinks" onclick="openCity(event, 'EC ENGR 102')">EC ENGR 102</button>
+  <!-- <button class="tablinks" onclick="openCity(event, 'EC ENGR 102')">EC ENGR 102</button> -->
 </div>
 
-<!-- *************** PHYSICS CONTENT ********************** -->
+<!-- *************** MATH 61 CONTENT ********************** -->
 <div id="MATH 61" class="tabcontent">
   <h1>MATHEMATICS 61</h1>
   <h2>Introduction to Discrete Structures</h2>
@@ -245,45 +259,71 @@
 </div>
 <!-- *************** PHYSICS CONTENT ********************** -->
 
+<div id="EC ENGR 3" class="tabcontent">
+        <h1>ELECTRICAL AND COMPUTER ENGINEERING 3</h1>
+          <h2>Introduction to Electrical Engineering</h2>
+          <h3>WEEK 1</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 2</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 3</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 4</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 5</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 6</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 7</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 8</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 9</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*</p>
+          <h3>WEEK 10</h3>
+          <img src="image_name.jpg" alt="image description">
+          <p>*enter week content here*.</p>
+        </div>
+
 <!-- *************** MATH CONTENT ********************** -->
 <div id="COM SCI M152A" class="tabcontent">
 <h1>COMPUTER SCIENCE M152A</h1>
   <h2>Introductory Digital Design Laboratory</h2>
-  <h3>WEEK 1</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 2</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 3</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 4</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 5</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 6</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 7</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 8</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 9</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p>
-  <h3>WEEK 10</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*.</p>
+  <h3>Lab 1: Floating Point Conversion</h3>
+  <!-- <img src="image_name.jpg" alt="image description"> -->
+  <div class="container">
+    <embed src="Lab1Report.pdf#toolbar=0" type="application/pdf" width="50%" height="580px" />
+    <p> <a href="https://docs.google.com/document/d/1oLwvxH070G6w9RzziEiTuosKFRrQgSdUKaY-Ng6tJGQ/edit?usp=sharing">For mobile users.</a> </p>
+  <p>Score: 96/100</p>
+  <h3>Lab 2: Sequencer</h3>
+  <!-- <img src="image_name.jpg" alt="image description"> -->
+    <embed src="Lab2Report.pdf#toolbar=0" type="application/pdf" width="50%" height="580px" />
+    <p> <a href="https://docs.google.com/document/d/1Aa20JEVqKc4e5cei_vfTm2TQWMikKmRhHVsIbKlSIr4/edit?usp=sharing">For mobile users.</a> </p>
+  <p>Score: 62/100</p>
+  <h3>Lab 3: Stop Watch</h3>
+  <!-- <img src="image_name.jpg" alt="image description"> -->
+    <embed src="Lab3Report.pdf#toolbar=0" type="application/pdf" width="50%" height="580px" />
+    <p> <a href="https://docs.google.com/document/d/1nH9EOGxYOshWK_X5T_H25_xCM5QvYs-kcm_tbwX5wns/edit?usp=sharing">For mobile users.</a> </p>
+  <p>Score: 71/100</p>
+  <h3>Lab 4: Creative Project</h3>
+  <!-- <img src="image_name.jpg" alt="image description"> -->
+    <embed src="Lab4Report.pdf#toolbar=0" type="application/pdf" width="50%" height="580px" />
+    <p> <a href="https://docs.google.com/document/d/1HYhyQVO2Ndu5G-BxTsa6sNMU_7_BDCQgxs_mqQHshKE/edit?usp=sharing">For mobile users.</a> </p>
+  <p>Score: 74/100</p>
 </div>
 <!-- *************** MATH CONTENT ********************** -->
 
 <!-- *************** CS CONTENT ********************** -->
-<div id="EC ENGR 3" class="tabcontent">
+<!-- <div id="EC ENGR 3" class="tabcontent">
 <h1>Electrical and Computer Engineering 3</h1>
   <h2>Introduction to Electrical Engineering</h2>
   <h3>WEEK 1</h3>
@@ -316,16 +356,13 @@
   <h3>WEEK 10</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*.</p>
-</div>
+</div> -->
 <!-- *************** CS CONTENT ********************** -->
 
 <!-- *************** EPS SCI CONTENT ********************** -->
-<div id="EC ENGR 102" class="tabcontent">
+<!-- <div id="EC ENGR 102" class="tabcontent">
   <h1>Electrical and Computer Engineering 102</h1>
   <h2>Systems and Signals</h2>
-  <!-- <h3>WEEK 1</h3>
-  <img src="image_name.jpg" alt="image description">
-  <p>*enter week content here*</p> -->
   <h3>WEEK 1</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*</p>
@@ -356,7 +393,7 @@
   <h3>WEEK 10</h3>
   <img src="image_name.jpg" alt="image description">
   <p>*enter week content here*.</p>
-</div>
+</div> -->
 <!-- *************** EPS SCI CONTENT ********************** -->
 <script>
 function openCity(evt, cityName) {
@@ -372,7 +409,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
